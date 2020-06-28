@@ -4,14 +4,28 @@
 
 	margin: 15rem 0;
 
-	display: grid;
-	//grid-template-columns: repeat(3, 1fr);
-	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));  // for making it responsive without media queries
-	grid-gap: 6rem;
-	align-items: start;
+	@support(display: grid) {
+		display: grid;
+		//grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));  // for making it responsive without media queries
+		grid-gap: 6rem;
+		align-items: start;
+	}
+
+	
 }
 
 .feature {
+
+
+	float: left;
+	width: 33.33%;
+	margin-bottom: 6rem;
+
+	@support(display: grid){
+		width: auto;
+		margin-bottom: 0;
+	}
 
 	display: grid;
 	grid-template-columns: min-content 1fr;
