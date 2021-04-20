@@ -1,0 +1,14 @@
+{
+  "name": "Nexter landing page",
+  "short_name": "Nexter",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fff",
+  "icons": [
+    {
+      "src": "./img/largefav.png",
+      "sizes": "273x273",
+      "type": "image/png"
+    }
+  ]
+}
